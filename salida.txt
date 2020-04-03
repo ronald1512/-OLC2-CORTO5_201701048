@@ -1,0 +1,24 @@
+T1 = 3*2
+T2 = 2+5
+T3 = T1*T2
+ if T3 == 15 goto L1
+ goto L2
+L2:
+T4 = 3*4
+T5 = 3+1
+T6 = T4/T5
+T7 = 2+T6
+ if T7 == 10 goto L3
+ goto L4
+L3:
+T8 = 6*7
+T9 = 8+1
+T10 = T8/T9
+ if T10 == 10 goto L5
+ goto L6
+
+L1, L5:
+ETIQUETA_VERDADERA
+
+L4, L6:
+ETIQUETA_FALSA
